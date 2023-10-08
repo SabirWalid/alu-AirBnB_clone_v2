@@ -10,7 +10,7 @@ Base = declarative_base()
 
 
 class BaseModel:
-    """A base class for all hbnb models
+    """A base class for all hbnb model
 
     Attributes:
         id (sqlalchemy String): The BaseModel id.
