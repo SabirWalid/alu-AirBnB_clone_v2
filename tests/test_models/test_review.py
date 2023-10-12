@@ -34,3 +34,4 @@ class test_review(test_basemodel):
         self.assertEqual(type(new.text), str if
                          os.getenv('HBNB_TYPE_STORAGE') != 'db' else
                          type(None))
+

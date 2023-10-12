@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "tests",
+			"path": "../../../../Downloads/AirBnB_clone-master/AirBnB_clone-master/tests"
+		},
+		{
+			"name": "alu-AirBnB_clone_v2",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
