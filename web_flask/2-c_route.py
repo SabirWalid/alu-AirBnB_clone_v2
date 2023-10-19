@@ -20,16 +20,16 @@ def hello_hbnb():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def display_hbnb():
+def hbnb():
     """Display "HBNB"."""
     return 'HBNB'
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def display_c_with_text(text):
+def c(text):
     """Display "C followed by number of characters in <text>"""
     text = text.replace('_', ' ')
-    return f'C {text}'
+    return "c {}" .format(text)
 
 
 if __name__ == '__main__':
