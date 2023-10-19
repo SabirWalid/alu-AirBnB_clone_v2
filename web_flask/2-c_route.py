@@ -26,7 +26,7 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def c(text):
+def C(text):
     """Display "C followed by number of characters in <text>"""
     text = text.replace('_', ' ')
     return "c {}" .format(text)
