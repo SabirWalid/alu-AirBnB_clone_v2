@@ -26,10 +26,10 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def C(text):
+def c(text):
     """Display "C followed by number of characters in <text>"""
     text = text.replace('_', ' ')
-    return "c {}" .format(text)
+    return "C {}" .format(text)
 
 
 if __name__ == '__main__':
