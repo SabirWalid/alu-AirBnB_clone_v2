@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Starts a flask app
-    listens to 0.0.0.0:5000
-    
+    listens to 0.0.0.0, port 5000
+
 """
 from models import storage
 from flask import Flask
