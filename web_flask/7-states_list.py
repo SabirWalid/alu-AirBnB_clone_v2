@@ -20,6 +20,20 @@ def display_states_list():
     return render_template("7-states_list.html", states=states)
 
 
+@app.route('/states/<id>', strict_slashes=False)
+def display_cities(id):
+    """Displays an HTML page with a list of all City objects in DBStorage.
+    Routes to /states/<id>
+    """
+    state = storage.get("State", id)
+    if state:
+        cities = state.cities if storage.__class__.__name__ == 'DBStorage' else state.cities()
+        sorted_cities = sorted(cities, key=lambda city: city.name)
+        return render_template('cities.html', state=state, cities=sorted_cities)
+    else:
+        return render_template('not_found.html')
+
+
 @app.teardown_appcontext
 def teardown_db(exc):
     """Remove the current SQLAlchemy session."""
